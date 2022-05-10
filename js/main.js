@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+    // $('.search-select-box select').selectpicker();
 
     $('.service-active').owlCarousel({
         loop:true,
@@ -47,6 +49,6 @@ $('.video-popup').magnificPopup({
     // other options
   });
 
-  $('.search-select-box select').selectpicker();
+
 
 })

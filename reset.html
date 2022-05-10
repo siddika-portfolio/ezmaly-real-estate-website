@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <!-- Default css -->
     <link rel="stylesheet" href="css/default.css" />
-     <!-- select css -->
-     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <!-- select css -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <!-- Custom css  -->
     <link rel="stylesheet" href="css/custom.css" />
   </head>
@@ -25,10 +25,19 @@
     <header class="header-area">
       <div class="container">
         <nav class="navbar navbar-light justify-content-between pt-5 pb-5">
-          <a class="navbar-brand" href="index.html">Company Logo</a>
+          <a class="navbar-brand text-dark pb-4" href="#">
+            <img src="images/logo.png" alt="Logo Image">
+          </a>
           <form class="form-inline">
-            <a href="" target="_blank" class="btn primary-btn my-2 my-sm-0 mr-4">Join Now</a>
-            <a href="login.html" target="_blank" class="btn primary-btn my-2 my-sm-0">Login</a>
+            <a href="" target="_blank" class="btn primary-btn my-2 my-sm-0 mr-4"
+              >Join Now</a
+            >
+            <a
+              href="login.html"
+              target="_blank"
+              class="btn primary-btn my-2 my-sm-0"
+              >Login</a
+            >
           </form>
         </nav>
       </div>
@@ -37,64 +46,65 @@
 
     <!-- Banner area start -->
     <section class="reset-area pt-100 pb-150">
-        <div class="container">
-            <div class="reset-form m-auto">
-                <div class="row align-content-center">
-                    <div class="col-xl-6 col-md-8 col-md-10 col-sm-12 offset-xl-3 text-center">
-                      <h2 class="pb-3">Reset Your Password</h2>
-                      <p class="pb-5">
-                        simply dummy text of the printing and typesetting Lorem Ipsum has
-                        been the industry's standard ever since the 1500s, when an unknown
-                        printerof type aa type specimen
-                      </p>
-                      <form>
-                        <div class="form-group">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            placeholder="Enter E-mail/Phone Number"
-                          />
-                        </div>
-                        <button type="submit" class="btn btn-large">
-                            Reset Password 
-                        </button>
-                      </form>
-                    </div>
-                    
-                  </div>
-            </div>
-         
-        </div>
-      </section>
-      <!-- Banner area start -->
-    
-    <!-- Footer area start -->
-    <footer class="footer-area theme-bg">
       <div class="container">
-        <div class="footer-top pt-4 pb-4">
-          <div class="row justify-content-between">
-            <div class="col-xl-6 col-md-8 col-sm-12 mb-4">
-              <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-            <div class="col-xl-2 col-md-4 col-sm-12">
-              <button class="btn secondary-btn">Join Now</button>
+        <div class="reset-form m-auto">
+          <div class="row align-content-center">
+            <div
+              class="col-xl-6 col-md-8 col-md-10 col-sm-12 offset-xl-3 text-center"
+            >
+              <h2 class="pb-3">Reset Your Password</h2>
+              <p class="pb-5">
+                simply dummy text of the printing and typesetting Lorem Ipsum
+                has been the industry's standard ever since the 1500s, when an
+                unknown printerof type aa type specimen
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter E-mail/Phone Number"
+                  />
+                </div>
+                <a href="#" type="submit" class="btn btn-large">
+                  Reset Password
+                </a>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <!-- <hr/> -->
+    </section>
+    <!-- Banner area start -->
+
+    <!-- Footer area start -->
+    <footer class="footer-area theme-bg">
+      <div class="footer-top">
+        <div class="container">
+            <div class="d-flex pt-4 pb-4">
+              <div class="social-icon">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+              </div>
+              <div class="join-btn ml-auto">
+                <a href="#" class="btn secondary-btn">Join Now</a>
+              </div>
+            </div>
+        </div>
+      </div>
       <div class="container">
         <div class="footer-bottom pt-50 text-center">
-          <div class="footer-widget pb-80">
-            <!-- <img src="images/logo_02.png" alt=""> -->
-            <h6>Company Logo</h6>
+          <div class="footer-logo pb-80">
+            <img src="images/logo.png" alt="Logo Image">
           </div>
           <div class="footer-widget mb-3">
             <a href="#">About Us</a>
@@ -102,8 +112,8 @@
             <a href="#">Contact</a>
           </div>
         </div>
-        <div class="up-arrow pb-4 text-lg-right">
-          <i class="fas fa-arrow-up"></i>
+        <div class="up-arrow pb-4 text-right">
+          <a href="#"><i class="fas fa-arrow-up"></i></a>
         </div>
       </div>
     </footer>
@@ -121,6 +131,16 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- select js -->
     <script src="js/bootstrap-select.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom js  -->
     <script src="js/main.js"></script>
   </body>

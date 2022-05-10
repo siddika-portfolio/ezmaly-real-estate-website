@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Page</title>
+    <title>Decission Page</title>
     <!-- Bootstrap css  -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- FontAwesome css  -->
@@ -33,7 +33,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand text-dark pb-4" href="#">
-            <img src="images/logo.png" alt="Logo Image">
+            <img src="images/logo.png" alt="Logo Image" />
           </a>
           <div class="message-icon d-lg-none d-sm-block d-md-block ml-auto">
             <img src="images/nav-icon.svg" alt="Message Images" />
@@ -79,7 +79,11 @@
               </li>
             </ul>
             <form class="form-inline my-2 mx-4 my-lg-0 m-auto">
-              <a href="#"class="btn primary-btn my-2 my-sm-0 m-auto" type="submit">
+              <a
+                href="#"
+                class="btn primary-btn my-2 my-sm-0 m-auto"
+                type="submit"
+              >
                 Create Group
               </a>
             </form>
@@ -95,70 +99,50 @@
     </header>
     <!-- Header area end -->
 
-    <!-- Banner area start -->
-    <section
-      class="search-banner theme-bg pt-100 pb-150 d-none d-sm-block d-md-block col-lg-block"
-    >
-      <div class="container">
-        <div class="search-form m-auto">
-          <div class="row align-content-center">
-            <div class="col-lg-6 col-md-10 col-sm-12 offset-xl-3 text-center">
-              <h1 class="pb-3">Find your Co-Owner for Better Life in Future</h1>
-              <p class="pb-5">
-                simply dummy text of the printing and typesetting Lorem Ipsum
-                has been the industry's standard ever since the 1500s, when an
-                unknown printerof type aa type specimen
-              </p>
-              <form>
-                <div class="form-group">
-                  <div class="search-select-box d-flex justify-content-between">
-                    <div>
-                      <select>
-                        <option value="">category</option>
-                        <option value="">by home district</option>
-                        <option value="">by home district</option>
-                        <option value="">by home district</option>
-                      </select>
-                      <input
-                        type="text"
-                        placeholder="Search Co-owner"
-                        class="search-input"
-                      />
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-magnifying-glass mt-5"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-button-group">
-                  <span>Popular</span>
-                  <button class="btn btn-outline-primary mr-2">
-                    by Home District
-                  </button>
-                  <button class="btn btn-outline-primary mr-2">
-                    by Profession
-                  </button>
-                  <button class="btn btn-outline-primary mr-2">
-                    by budget
-                  </button>
-                  <button class="btn btn-outline-primary mr-2">
-                    by Education
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Banner area start -->
-
     <!-- main area start -->
     <main class="main-area pt-40 pb-60">
       <div class="container">
-        <div class="row">
+        <div class="row mt-80">
           <div class="col-lg-8 col-12">
-            <div class="profile-post">
+            <div class="mb-4">
+              <div class="group-banner-img">
+                <img
+                  src="images/profile-datails-banner.png"
+                  alt="Banner Image"
+                  class="img-fluid"
+                />
+                <div
+                  class="group-banner-content d-flex justify-content-between"
+                >
+                  <div class="d-flex">
+                    <div>
+                      <img
+                        src="images/group-avatar/group-avatar-5.png"
+                        alt="Group Banner Image"
+                        class="img-fluid mt-4 mr-4"
+                      />
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="group-details-text">
+                        <h5 class="text-light">We Meet Together</h5>
+                        <p class="text-light">
+                          Professional Banker from Narsin
+                        </p>
+                        <span class="text-light">1545 Member</span>
+                      </div>
+                      <div class="banner-btn d-flex justify-content-end">
+                        <a href="#" class="btn post-btn mr-4">Add Member</a>
+                        <a href="#" class="btn btn-dark invite-btn d-none d-lg-block"
+                          >Join Group</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-post mt-5">
               <div class="d-flex justify-content-between">
                 <div class="profile-post-left">
                   <img
@@ -168,9 +152,20 @@
                   />
                   <span>Post Your Plan</span>
                 </div>
-                <div class="profile-post-right pt-30 ml-2">
-                  <i class="fas fa-photo-video"></i>
-                  <button class="btn post-btn ml-25">Post Now</button>
+                <div
+                  class="profile-post-right d-flex justify-content-around pt-30"
+                >
+                  <i class="fas fa-photo-video d-none d-md-block"></i>
+                  <div class="ml-3">
+                    <select>
+                      <option value="">category</option>
+                      <option value="">Genarel Post</option>
+                      <option value="">Voting post</option>
+                      <option value="">Discussion</option>
+                      <option value="">Property Post</option>
+                    </select>
+                  </div>
+                  <button class="btn post-btn ml-3 mb-5 d-none d-md-block">Post Now</button>
                 </div>
               </div>
             </div>
@@ -192,10 +187,14 @@
                       </div>
                     </div>
                     <div>
+                      <span class="type genarel">Genarel Post</span>
                       <p>45m ago</p>
                     </div>
                   </div>
                   <div class="post-text pt-4">
+                    <h6 class="post-heading mb-4">
+                      What is the Amout per capital for build our dream?
+                    </h6>
                     <p class="pb-4">
                       simply dummy text of the printing antypesetting Lorem
                       Ipsum has been indussstandard ever since the 1500s, when
@@ -249,7 +248,7 @@
                       <a
                         href="#"
                         class="btn btn-dark invite-btn d-none d-xl-block d-lg-block"
-                        >Invite to a Group</a
+                        >Join Group</a
                       >
                     </div>
                     <div>
@@ -284,205 +283,9 @@
                     <div class="d-flex">
                       <div class="post-top-img">
                         <img
-                          src="images/group-avatar/group-avatar-4.png"
-                          alt="Avatar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="post-top-content ml-4">
-                        <h6>Ezmaly</h6>
-                        <p>Real Estate Companyi</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p>45m ago</p>
-                    </div>
-                  </div>
-                  <div class="post-text pt-4">
-                    <h5>Roles of Property Selling</h5>
-                    <p class="pb-4 pt-2">
-                      simply dummy text of the printing antypesetting Lorem
-                      Ipsum has been indussstandard ever since the 1500s, when
-                      an unknown Hi, I have more than 8 years of experience Desi
-                      gning. I am interested in your work. Let's Connect. "We
-                      wouldn't be a popular website without the comments and
-                      engagement we get through Disqus.""We wouldn't be a
-                      popular website without the comments and engagement we get
-                      through Disqus.""We <span><a href="#">Read more</a></span>
-                    </p>
-                    <img
-                      src="images/postImg.png"
-                      alt="Post Image"
-                      class="img-fluid mb-3"
-                    />
-                    <p>
-                      <span>0 React</span><span class="ml-5">2 response </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="post-bottom p-4">
-                  <div class="d-flex py-3">
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/reactsvg.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>React</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/comment.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Comment</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/share.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Share</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <a href="#" class="btn post-btn">Follow</a>
-                    </div>
-                  </div>
-                  <div class="profile-post">
-                    <div class="d-flex justify-content-between">
-                      <div class="profile-post-left">
-                        <img
-                          src="images/profile-img/profileImg-1.png"
+                          src="images/avatar/avater-2.png"
                           alt="Post Image"
                           class="img-fluid"
-                        />
-                        <span>Add a Comment</span>
-                      </div>
-                      <div class="profile-post-right">
-                        <i class="fas fa-photo-video"></i>
-                        <a href="#" class="btn post-btn ml-5">Post Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post-wrapper mt-5">
-                <div class="post_top p-4">
-                  <div class="post_topInfo d-flex justify-content-between">
-                    <div class="d-flex">
-                      <div class="post-top-img">
-                        <img
-                          src="images/group-avatar/group-avatar-1.png"
-                          alt="Post Avatar"
-                          class="Post_avatar"
-                        />
-                      </div>
-                      <div class="post-top-content ml-4">
-                        <h6>Group Name</h6>
-                        <p>Group post by admin</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p>45m ago</p>
-                    </div>
-                  </div>
-                  <div class="post-text pt-4">
-                    <p class="pb-4">
-                      simply dummy text of the printing antypesetting Lorem
-                      Ipsum has been indussstandard ever since the 1500s, when
-                      an unknown Hi, I have more than 8 years of experience Desi
-                      gning. I am interested in your work. Let's Connect. "We
-                      wouldn't be a popular website without the comments and
-                      engagement we get through Disqus.""We wouldn't be a
-                      popular website without the comments and engagement we get
-                      through Disqus.""We
-                    </p>
-                    <p>
-                      <span>0 React</span><span class="ml-5">2 response </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="post-bottom py-4 pl-4">
-                  <div class="d-flex py-3">
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/reactsvg.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>React</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/comment.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Comment</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/share.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Share</p>
-                    </div>
-                    <div class="post_option d-flex mr-3">
-                      <img
-                        src="images/post-svg-icon/join.svg"
-                        alt="Post Icon"
-                        class="mb-2 mr-3 d-none d-lg-block"
-                      />
-                      <p class="d-none d-lg-block">
-                        Request Join this Group
-                      </p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <a
-                        href="#"
-                        class="btn post-btn d-none d-xl-block d-lg-block"
-                      >
-                        Follow
-                      </a>
-                    </div>
-                    <div>
-                      <img
-                        src="images/post-svg-icon/more.svg"
-                        alt="Post Icon"
-                        class="d-md-block d-lg-none"
-                      />
-                    </div>
-                  </div>
-                  <div class="profile-post">
-                    <div class="d-flex justify-content-between">
-                      <div class="profile-post-left">
-                        <img
-                          src="images/profile-img/profileImg-1.png"
-                          alt="Post Image"
-                          class="img-fluid"
-                        />
-                        <span>Add a Comment</span>
-                      </div>
-                      <div class="profile-post-right">
-                        <i class="fas fa-photo-video"></i>
-                        <a href="#" class="btn post-btn ml-5">Post Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post-wrapper mt-5">
-                <div class="post_top p-4">
-                  <div class="post_topInfo d-flex justify-content-between">
-                    <div class="d-flex">
-                      <div class="post-top-img">
-                        <img
-                          src="images/avatar/avatar-3.png"
-                          alt=""
-                          class="Post_avatar"
                         />
                       </div>
                       <div class="post-top-content ml-4">
@@ -491,10 +294,113 @@
                       </div>
                     </div>
                     <div>
+                      <span class="type voting">Voting Post</span>
+                      <p>Time :25:35:30</p>
+                    </div>
+                  </div>
+                  <div class="post-text pt-4">
+                    <h6 class="post-heading mb-4">
+                      What is the Amout per capital for build our dream?
+                    </h6>
+                    <h6 class="post-heading">Yes</h6>
+                    <h6 class="post-heading mb-4">No</h6>
+                    <p>
+                      <span>0 React</span><span class="ml-5">2 response </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="post-bottom p-4">
+                  <div class="d-flex py-3">
+                    <div class="post_option d-flex">
+                      <img
+                        src="images/post-svg-icon/reactsvg.svg"
+                        alt="Post Icon"
+                        class="mb-3 mr-3"
+                      />
+                      <p>React</p>
+                    </div>
+                    <div class="post_option d-flex">
+                      <img
+                        src="images/post-svg-icon/comment.svg"
+                        alt="Post Icon"
+                        class="mb-3 mr-3"
+                      />
+                      <p>Comment</p>
+                    </div>
+                    <div class="post_option d-flex">
+                      <img
+                        src="images/post-svg-icon/share.svg"
+                        alt="Post Icon"
+                        class="mb-3 mr-3"
+                      />
+                      <p>Share</p>
+                    </div>
+                    <div class="post_option d-flex">
+                      <a
+                        href="#"
+                        class="btn post-btn ml-3 d-none d-xl-block d-lg-none"
+                      >
+                        Follow
+                      </a>
+                    </div>
+                    <div class="post_option d-flex">
+                      <a
+                        href="#"
+                        class="btn locked-btn d-none d-xl-block d-lg-block"
+                        >Locked Decission</a
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="images/post-svg-icon/more.svg"
+                        alt="Post Icon"
+                        class="d-md-block d-lg-none"
+                      />
+                    </div>
+                  </div>
+                  <div class="profile-post">
+                    <div class="d-flex justify-content-between">
+                      <div class="profile-post-left">
+                        <img
+                          src="images/profile-img/profileImg-1.png"
+                          alt="Post Image"
+                          class="img-fluid"
+                        />
+                        <span>Add a Comment</span>
+                      </div>
+                      <div class="profile-post-right">
+                        <i class="fas fa-photo-video"></i>
+                        <a href="#" class="btn post-btn ml-5">Post Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-wrapper mt-5">
+                <div class="post_top p-4">
+                  <div class="post_topInfo d-flex justify-content-between">
+                    <div class="d-flex">
+                      <div class="post-top-img">
+                        <img
+                          src="images/avatar/avater-2.png"
+                          alt="Post Image"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="post-top-content ml-4">
+                        <h6>Johan Samad</h6>
+                        <p>Banker, Narsingdi</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="type topic-wise">Topic Wise Post</span>
                       <p>45m ago</p>
                     </div>
                   </div>
                   <div class="post-text pt-4">
+                    <h6 class="post-heading mb-4">
+                      What is the Amout per capital for build our dream?
+                    </h6>
                     <p class="pb-4">
                       simply dummy text of the printing antypesetting Lorem
                       Ipsum has been indussstandard ever since the 1500s, when
@@ -547,7 +453,7 @@
                     <div class="post_option d-flex">
                       <a
                         href="#"
-                        class="btn btn-dark invite-btn d-none d-xl-block d-lg-block"
+                        class="btn btn-dark invite-btn d-xl-block d-lg-block"
                         >Invite to a Group</a
                       >
                     </div>
@@ -563,7 +469,7 @@
                     <div class="d-flex justify-content-between">
                       <div class="profile-post-left">
                         <img
-                          src="images/profile-img/profileImg-2.png"
+                          src="images/profile-img/profileImg-1.png"
                           alt="Post Image"
                           class="img-fluid"
                         />
@@ -589,16 +495,19 @@
                         />
                       </div>
                       <div class="post-top-content ml-4">
-                        <h6>Ezmaly</h6>
-                        <p>Real Estate Companyi</p>
+                        <h6>Asad</h6>
+                        <p>Real Estate Company</p>
                       </div>
                     </div>
                     <div>
+                      <span class="type property">Property Post</span>
                       <p>45m ago</p>
                     </div>
                   </div>
                   <div class="post-text pt-4">
-                    <h5>Roles of Property Selling</h5>
+                    <h5>
+                      Plat Size : 5 Katha, Aftab Nagar, 500000 Lac/per katha
+                    </h5>
                     <p class="pb-4 pt-2">
                       simply dummy text of the printing antypesetting Lorem
                       Ipsum has been indussstandard ever since the 1500s, when
@@ -667,210 +576,56 @@
                   </div>
                 </div>
               </div>
-              <div class="post-wrapper mt-5">
-                <div class="post_top p-4">
-                  <div class="post_topInfo d-flex justify-content-between">
-                    <div class="d-flex">
-                      <div class="post-top-img">
+            </div>
+
+            <div class="event-card-wrapper mt-80">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <div class="group-card">
+                    <div class="group-card-body d-flex">
+                      <div>
                         <img
                           src="images/group-avatar/group-avatar-5.png"
-                          alt="Post Avatar"
-                          class="Post_avatar"
+                          alt="Group Card Image"
+                          class="img-fluid mt-4"
                         />
                       </div>
-                      <div class="post-top-content ml-4">
-                        <h6>Group Name</h6>
-                        <p>Group post by admin</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p>45m ago</p>
-                    </div>
-                  </div>
-                  <div class="post-text pt-4">
-                    <p class="pb-4">
-                      simply dummy text of the printing antypesetting Lorem
-                      Ipsum has been indussstandard ever since the 1500s, when
-                      an unknown Hi, I have more than 8 years of experience Desi
-                      gning. I am interested in your work. Let's Connect. "We
-                      wouldn't be a popular website without the comments and
-                      engagement we get through Disqus.""We wouldn't be a
-                      popular website without the comments and engagement we get
-                      through Disqus.""We
-                    </p>
-                    <p>
-                      <span>0 React</span><span class="ml-5">2 response </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="post-bottom py-4 pl-4">
-                  <div class="d-flex py-3">
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/reactsvg.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>React</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/comment.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Comment</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/share.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Share</p>
-                    </div>
-                    <div class="d-flex mr-3">
-                      <img
-                        src="images/post-svg-icon/join.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3  d-none d-lg-block"
-                      />
-                      <p class=" d-none d-lg-block">
-                        Request Join this Group
-                      </p>
-                    </div>
-                    <div class="d-flex">
-                      <a
-                        href="#"
-                        class="btn post-btn d-none d-xl-block d-lg-block"
-                      >
-                        Follow
-                      </a>
-                    </div>
-                    <div>
-                      <img
-                        src="images/post-svg-icon/more.svg"
-                        alt="Post Icon"
-                        class="d-md-block d-lg-none"
-                      />
-                    </div>
-                  </div>
-                  <div class="profile-post">
-                    <div class="d-flex justify-content-between">
-                      <div class="profile-post-left">
-                        <img
-                          src="images/profile-img/profileImg-1.png"
-                          alt="Post Image"
-                          class="img-fluid"
-                        />
-                        <span>Add a Comment</span>
-                      </div>
-                      <div class="profile-post-right">
-                        <i class="fas fa-photo-video"></i>
-                        <a href="#" class="btn post-btn ml-5">Post Now</a>
+                      <div>
+                        <h5>Online Event</h5>
+                        <p>Online Video Call Event by Admin</p>
+                        <span>02 March 2020, 5:00 PM</span>
+                        <div
+                          class="event-right-content d-flex justify-content-between mt-5 mb-4"
+                        >
+                          <a href="#" class="btn event-btn">Join Event</a>
+                          <span>25 co-owner</span>
+                        </div>
+                        <a href="#" class="btn event-btn">Confirn to Join</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="post-wrapper mt-5">
-                <div class="post_top p-4">
-                  <div class="post_topInfo d-flex justify-content-between">
-                    <div class="d-flex">
-                      <div class="post-top-img">
+                <div class="col-lg-6">
+                  <div class="group-card">
+                    <div class="group-card-body d-flex">
+                      <div>
                         <img
-                          src="images/avatar/avatar-4.png"
-                          alt=""
-                          class="Post_avatar"
+                          src="images/group-avatar/group-avatar-5.png"
+                          alt="Group Card Image"
+                          class="img-fluid mt-4"
                         />
                       </div>
-                      <div class="post-top-content ml-4">
-                        <h6>Johan Samad</h6>
-                        <p>Banker, Narsingdi</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p>45m ago</p>
-                    </div>
-                  </div>
-                  <div class="post-text pt-4">
-                    <p class="pb-4">
-                      simply dummy text of the printing antypesetting Lorem
-                      Ipsum has been indussstandard ever since the 1500s, when
-                      an unknown Hi, I have more than 8 years of experience Desi
-                      gning. I am interested in your work. Let's Connect. "We
-                      wouldn't be a popular website without the comments and
-                      engagement we get through Disqus.""We wouldn't be a
-                      popular website without the comments and engagement we get
-                      through Disqus.""We
-                    </p>
-                    <p>
-                      <span>0 React</span><span class="ml-5">2 response </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="post-bottom p-4">
-                  <div class="d-flex py-3">
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/reactsvg.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>React</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/comment.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Comment</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <img
-                        src="images/post-svg-icon/share.svg"
-                        alt="Post Icon"
-                        class="mb-3 mr-3"
-                      />
-                      <p>Share</p>
-                    </div>
-                    <div class="post_option d-flex">
-                      <a
-                        href="#"
-                        class="btn post-btn ml-3 d-none d-xl-block d-lg-none"
-                      >
-                        Follow
-                      </a>
-                    </div>
-                    <div class="post_option d-flex">
-                      <a
-                        href="#"
-                        class="btn btn-dark invite-btn d-none d-xl-block d-lg-block"
-                        >Invite to a Group</a
-                      >
-                    </div>
-                    <div>
-                      <img
-                        src="images/post-svg-icon/more.svg"
-                        alt="Post Icon"
-                        class="d-md-block d-lg-none"
-                      />
-                    </div>
-                  </div>
-                  <div class="profile-post">
-                    <div class="d-flex justify-content-between">
-                      <div class="profile-post-left">
-                        <img
-                          src="images/profile-img/profileImg-3.png"
-                          alt="Post Image"
-                          class="img-fluid"
-                        />
-                        <span>Add a Comment</span>
-                      </div>
-                      <div class="profile-post-right">
-                        <i class="fas fa-photo-video"></i>
-                        <a href="#" class="btn post-btn ml-5">Post Now</a>
+                      <div>
+                        <h5>Online Event</h5>
+                        <p>Online Video Call Event by Admin</p>
+                        <span>02 March 2020, 5:00 PM</span>
+                        <div
+                          class="event-right-content d-flex justify-content-between mt-5 mb-4"
+                        >
+                          <a href="#" class="btn event-btn">Join Event</a>
+                          <span>25 co-owner</span>
+                        </div>
+                        <a href="#" class="btn locked-btn">Confirn to Join</a>
                       </div>
                     </div>
                   </div>
@@ -889,12 +644,6 @@
                   class="img-fluid"
                 />
                 <p class="ml-3 mt-2 text-white">Message(4)</p>
-                <a
-                  href="#"
-                  class="btn post-btn ml-5 mt-2 d-none d-xl-block d-xxl-none"
-                >
-                  Post Now
-                </a>
               </div>
               <div class="sidebar-card mt-5">
                 <div class="activity-chart">
@@ -1141,194 +890,6 @@
                   </div>
                 </div>
               </div>
-              <div class="sidebar-card mt-5">
-                <div class="suggest-onwer">
-                  <h6 class="sidebar-heading mb-5">Latest Announcement</h6>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-4"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/Announcement/announcement-1.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/Announcement/announcement-2.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/Announcement/announcement-3.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/Announcement/announcement-4.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/Announcement/announcement-5.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center my-5">
-                    <a href="#" class="btn btn-dark more-btn"
-                      >More Announcement</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="sidebar-card mt-5">
-                <div class="suggest-onwer">
-                  <h6 class="sidebar-heading mb-5">Articles you may like</h6>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-4"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/article/article-1.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/article/article-2.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/article/article-3.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/article/article-4.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="sidebar-profile d-flex justify-content-between mt-2"
-                  >
-                    <div class="d-flex">
-                      <div class="sidebar-img">
-                        <img
-                          src="images/article/article-5.png"
-                          alt="Sidebar Image"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="sidebar-content ml-2">
-                        <h6 class="h6-small">Johan Samad</h6>
-                        <p>Banker</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center my-5">
-                    <a href="#" class="btn btn-dark more-btn">More Articles</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1361,7 +922,7 @@
       <div class="container">
         <div class="footer-bottom pt-50 text-center">
           <div class="footer-logo pb-80">
-            <img src="images/logo.png" alt="Logo Image">
+            <img src="images/logo.png" alt="Logo Image" />
           </div>
           <div class="footer-widget mb-3">
             <a href="#">About Us</a>
